@@ -27,9 +27,17 @@ async function updateTodo(todo) {
 }
 
 async function removeTodo(todoId) {
-    await httpService.remove(todoId)
+    try {
+        await httpService.remove(todoId)
+    } catch (err) {
+        console.log(err)
+    }
 }
 
 async function addTodo(todo) {
-    await httpService.post('',todo)
+    try {
+        await httpService.post('',todo)
+    } catch (err) {
+        console.log(err)
+    }
 }
