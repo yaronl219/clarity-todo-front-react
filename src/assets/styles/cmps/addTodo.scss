@@ -1,0 +1,14 @@
+.add-todo-container {
+    display: flex;
+    justify-content: stretch;
+    margin: 1rem 0;
+    form {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        div {
+            width: 100%;
+        }
+    }
+}

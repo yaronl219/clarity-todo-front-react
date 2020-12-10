@@ -15,8 +15,8 @@ export default function AddTodo({ onAdd }) {
     return (
         <div className="add-todo-container">
             <form onSubmit={onSubmit}>
-                <TextField label="Add Todo" value={name} onChange={(ev) => setName(ev.target.value)} />
-                <Button onClick={onSubmit}>Add</Button>
+                <TextField label="Add Todo" value={name}  color="secondary"  onChange={(ev) => setName(ev.target.value)} />
+                <Button onClick={onSubmit} color="secondary" >Add</Button>
             </form>
         </div>
     )
